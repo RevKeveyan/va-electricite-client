@@ -1,0 +1,82 @@
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  &.open {
+    display: block;
+  }
+  &__btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    button{
+      background-color: #007BFF;
+    }
+    &__delete{
+      background:#f94646 !important;
+    }
+  }
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+  max-width: 600px;
+  border-radius: 5px;
+  position: relative;
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    
+    &:hover {
+      color: black;
+    }
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  select, input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  img {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+  
+  button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.header-promo{
+  
+    background:url('../../media/img/electr.gif') center (center/cover) no-repeat;
+    min-height: 300px;
+    height: 100%;
+    &__title{
+        padding-top: 100px;
+        background:rgb(45 77 244 / 75%);
+        height: 700px;
+        text-align: center;
+        color:aliceblue;
+        h1{
+            font-size: 35px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+
+        }
+        p{
+            font-size: 25px;
+           padding: 0 10px;
+        }
+    }   
+}

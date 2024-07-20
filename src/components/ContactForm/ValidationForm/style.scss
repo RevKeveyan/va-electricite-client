@@ -1,0 +1,48 @@
+@import '../../../variables.scss';
+
+.error{
+    color:red;
+}
+.form{
+    &__btn{
+        padding: 10px 60px;
+        border-radius: 50px;
+        background-color: $mainyellow;
+        border: none;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        font-size: 20px;
+        &:hover{
+            background-color: $mainyellow;
+            color: #fff;
+        }
+    }
+    form{
+        margin: 0 auto;
+        textarea{
+            width: 350px;
+            max-height: 150px;
+            height: 100%;
+            font-size: 17px;
+            resize: none;
+            padding: 10px;
+            border:1px solid $mainyellow;
+            margin-top: 10px;
+            border-radius:5px;
+        }
+        input{
+            margin-top: 5px;
+            width: 350px;
+            padding: 10px;
+            font-size: 17px;
+            border:1px solid $mainyellow;
+            border-radius:10px;
+
+        }
+        
+        button{
+            display: block;
+            margin: 0 auto;
+        }
+    } 
+}

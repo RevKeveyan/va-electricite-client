@@ -1,0 +1,75 @@
+@import '../../../variables.scss';
+.tarif{
+    padding: 140px 0 80px 0;
+    text-align: center;
+    &__edit{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        color:#fff;
+        cursor: pointer;
+        font-size: 17px;
+        transition: 0.5s all;
+        &:hover{
+            font-size: 22px;
+        }
+    }
+    &__title{
+        position: relative;
+        text-transform: uppercase;
+        p{
+            margin-bottom: 20px;
+            &::before{
+                left: 35%;
+                position: absolute;
+                width: 50px;
+                height: 2px;
+                background-color: $mainyellow;
+                content: '';
+
+            }
+            &::after{
+                right: 35%;
+                position: absolute;
+                width: 50px;
+                height: 2px;
+                background-color: $mainyellow;
+                content: '';
+            }
+            
+        }
+        h2{
+            margin-bottom: 50px;
+        }
+
+    }
+
+   
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__wrapper{
+        position: relative;
+        width: 300px;
+        height: 300px;
+    }
+    &__descr{
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        bottom:0;
+        background: #2f2f2fa6;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $mainyellow;
+        padding-top: 10px;
+
+        p{
+            margin-top: 20px;
+        }
+    }
+}

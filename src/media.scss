@@ -1,0 +1,529 @@
+@import './variables.scss';
+
+@media (max-width: 1800px){
+
+    .promo{
+        min-height: 640px;    
+    }
+}
+@media (max-width: 1600px){
+
+    .promo{
+        min-height: 450px;    
+    }
+}
+@media (max-width: 1200px){
+    .container{
+        max-width: 960px;
+    }
+    .promo{
+        min-height: 400px;    
+    }
+    .header{
+        grid-template-columns: auto;
+        row-gap: 100px;
+    }
+    .form{
+        grid-template-columns: repeat(2,auto);
+        gap: 50px;
+    }
+    .map{
+
+        iframe{
+            max-width: 500px;
+            height: 600px;
+        }
+    }
+
+    .skills{
+        &__wrapper{
+            grid-template-columns: repeat(2,400px);
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 720px;
+    }
+    .promo{
+        min-height: 300px;    
+    }
+    .header{
+        &__about{
+            max-width: inherit;
+        }
+    }
+    .skills{
+        &__wrapper{
+            grid-template-columns: 500px;
+            justify-content: center;
+
+        }
+    }
+    .footer{
+        &__contact{
+            margin: 30px;
+            &__phone{
+                padding: 5px 20px;
+                max-width: 250px;
+                img{
+                    width: 20px;
+                }
+                a{
+                    font-size: 15px;        
+                }
+            }
+        }
+        &__wrapper{
+            border:none;
+        }
+    }
+
+    .tarif {
+        &__content{
+            display: grid;
+            row-gap: 50px;
+            justify-content: center;
+        }
+        &__title{
+            p{
+                margin-bottom: 20px;
+                &::before{
+                    left: 30%;
+                }
+                &::after{
+                    right: 30%;
+                }
+                
+            }
+        }
+        &__wrapper{
+            position: relative;
+            width: 500px;
+            height: 500px;
+           
+        }
+        &__descr{
+            padding: 0;
+            h2{
+                margin-top: 50px;
+            }
+            p{
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 540px;
+    }
+    .promo{
+        margin-top: 40px;
+        min-height: 220px;    
+    }
+    .menu{
+        height: 40px;
+        &__links{
+            margin-top: 38px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background:$mainyellow;
+            height: 70vh;
+            width: 50%;
+            left: 0;
+            transition: 0.5s all;
+            border: 1px solid $maincolor;
+
+        }
+    }
+        
+        
+    .hamburger{
+        display: block;
+        position: absolute ;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        span {  
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #e000d1;
+        margin-bottom: 4px;
+        transition: 0.5s all;
+        z-index: 10;
+        transition: 0.5s all;
+        }
+        
+    }
+    .close{
+        span{
+            &:nth-child(1){
+                transform: translateY(3px) rotate(-45deg);
+            }
+            &:nth-child(2){
+                display: none;
+            }
+            &:nth-child(3){
+                transform: translateY(-3px) rotate(45deg);
+            }
+        }
+    }
+
+    .stat__wrapper{
+        h2{
+            font-size: 25px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    .hide{
+        left: -50%;
+    }
+    .header{
+        grid-template-columns: repeat(auto-fill, 100%);
+        justify-content: space-between;
+    }
+
+    .reviews{
+        &__text{
+            max-width: 300px;
+
+        }
+    }
+
+    .electric{
+        &__descr{
+            &__title{
+                font-size: 30px;
+            }
+            &__subtitle{
+                font-size: 25px;
+            }
+            &__text{
+                font-size: 17px;
+            }
+        }
+        &__wrapper{
+            display: block;
+            text-align: center;
+            h2{
+                font-size: 25px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        &__img{
+            display: block; 
+            margin: 0 auto;
+        }
+    }
+
+   
+
+
+    .footer{
+        &__contact{
+            &__phone{
+                padding: 5px 20px;
+                img{
+                    width: 20px;
+                }
+                a{
+                    font-size: 15px;        
+                }
+            }
+        }
+        &__about{
+            font-size: 17px;
+            max-width: inherit;
+            margin: 30px;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid#eeff07;
+            // border-left: 1px solid#eeff07;
+        }
+        &__contact{
+            // border-right: 1px solid#eeff07;
+            // border-left: 1px solid#eeff07;
+            padding: 0;
+            &__phone{
+                width: 280px;
+                padding: 10px 20px;
+
+            }
+        }
+        &__menu{
+            margin: 30px;
+            border:none;
+            border-bottom: 1px solid#eeff07;
+            padding-bottom: 20px;
+
+        }
+        &__wrapper{
+            display: block;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+    .reviews{
+        &__slider{
+            max-width:500px;
+        }
+        &__img{
+            display: block;
+            margin: 0 auto;
+            max-width: 120px;
+            margin-bottom: 50px;
+            img{
+                width: 100%;
+            }
+        }
+        &__text{
+            max-width: 250px;
+            padding-right: 20px;
+        }
+        &__descr{
+            h2{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+
+    .form{
+        display: block;
+        position: relative;
+        padding: 0;
+        padding-top: 50px;
+        form{
+            text-align: center;
+        }
+    }
+
+    .map{
+
+        iframe{
+            position: absolute;
+            bottom: 0;
+            max-width: inherit;
+            width: 100%;
+            height: 300px;
+        }
+    }
+   
+    .skills{
+        &__title{
+            h2{
+                font-size: 25px;
+                line-height: 25px;
+                padding: 10px;
+            }
+        }
+    }
+    .slide{
+        &__text{
+            p{
+                font-size: 20px;
+                padding: 20px 10px;
+                line-height: 27px;
+            }
+        }
+    }
+
+    .about-skill{
+        &__descr{
+            h2{
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        &__content{
+            display: block;
+            &__wrapper{
+                
+                width: 300px;
+                margin: 0 auto; 
+                margin-bottom: 80px;
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 100%;
+    }
+    .promo{
+        min-height: 140px;    
+    }
+    .header{
+        h1{
+            font-size: 20px;
+        }
+        p{
+            font-size: 17px;
+        }
+        &__tasks{
+            li{
+                font-size: 17px;
+            }
+        }
+        &__btn{
+            font-size: 17px;
+            img{
+                max-width: 20px;
+            }
+            padding: 5px 10px;
+        }
+        form{
+            input,textarea{
+                width: 90%;
+            }
+        }
+    }
+
+    .reviews{
+        &__wrapper{
+            max-width: 300px;
+            text-align: center;
+        }
+        &__descr{
+            h2{
+                font-size: 17px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        &__text{
+            max-width: inherit;
+            padding-right: 0;
+
+        }
+        &__img{
+            display: block;
+            margin: 0 auto;
+            max-width: 100px;
+            margin-bottom: 50px;
+            img{
+                width: 100%;
+            }
+        }
+        .active{
+            display: block;
+        }
+        &__rating{
+            position: absolute;
+            left: 45%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+    }
+    .skills{
+        &__wrapper{
+            grid-template-columns: 300px;
+            justify-content: center;
+        }
+        &__title{
+            h2{
+                font-size: 17px;
+                padding: 20px 10px;
+            }
+        }
+    }
+    .electric{
+        padding: 80px 0;
+    }
+
+    .header-promo{
+
+        &__title{
+            h1{
+                font-size: 25px;
+                margin-bottom: 25px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }   
+    }   
+    .slide{
+        &__text{
+            p{
+                font-size: 17px;
+                padding: 10px; 
+                line-height: 27px;
+            }
+        }
+    }
+
+    .about-skill{
+        &__descr{
+            h2{
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 17px;
+            }
+        }
+        &__content{
+            display: block;
+            &__wrapper{
+                
+                width: 300px;
+                margin: 0 auto; 
+                margin-bottom: 80px;
+            }
+        }
+        
+    }
+    .tarif {
+        &__content{
+            display: grid;
+            row-gap: 50px;
+            justify-content: center;
+        }
+        &__title{
+            p{
+                margin-bottom: 20px;
+                &::before{
+                    left: 20%;
+                }
+                &::after{
+                    right: 20%;
+                }
+                
+            }
+        }
+        &__wrapper{
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+        &__descr{
+            h2{
+                margin-top: 20px;
+            }
+            p{
+                margin-top: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+@import '../../../variables.scss';
+
+.reviews{
+    padding: 80px;
+    max-height: 500px;
+    &__wrapper{
+        display: none;
+        max-width: 600px;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+    &__btn{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 30px;
+        font-size: 20px;
+        background:$mainyellow;
+        color:$maincolor;
+        cursor: pointer;
+        border: 2px solid $maincolor;
+        border-radius: 10px;
+        &:hover{
+            background:$maincolor;
+            color:$mainyellow;
+        }
+    }
+    .active{
+        display: flex;
+
+    }
+    &__img{
+        max-width: 150px;
+        img{
+            width: 100%;
+            border-radius: 100%;
+        }
+    }
+    &__descr{
+        max-width: 400px;
+    }
+    &__text{
+        text-align-last: left;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 10px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+    }
+    &__rating{
+        max-width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img{
+            width: 100%;
+        }
+        h2{
+            color: #FFC107;
+            font-size: 20px;
+            margin-left: 10px;
+        }
+    }
+    &__slider{
+        position: relative;
+        margin-bottom: 80px;
+        &__arrows{
+            display: flex;
+            position: absolute;
+            max-width: 700px;
+            width: 100%;
+            justify-content: space-between;
+            bottom: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__previous, &__next{
+            max-width: 20px;
+            img{
+                width: 100%;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}
